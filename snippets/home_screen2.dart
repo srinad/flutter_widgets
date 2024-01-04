@@ -1,4 +1,3 @@
-import 'package:example_widgets/HomeScreenThree/home_screen3.dart';
 import 'package:flutter/material.dart';
 
 // ignore: must_be_immutable
@@ -122,13 +121,7 @@ class HomeScreenTwo extends StatelessWidget {
                 height: 20,
               ),
               GestureDetector(
-                onTap: () {
-                  Navigator.of(context).push(
-                    MaterialPageRoute(
-                      builder: (context) => HomeScreenThree(),
-                    ),
-                  );
-                },
+                onTap: () {},
                 child: Image.network(
                     'https://readytomeat.in/cdn/shop/files/Web-Banners-_1600x600_9575aa22-a7bb-4f27-bfb4-92fa645f24a1.jpg?v=1679569581&width=1500'),
               ),

@@ -1,4 +1,3 @@
-import 'package:example_widgets/HomeScreenTwo/home_screen2.dart';
 import 'package:flutter/material.dart';
 
 // ignore: must_be_immutable
@@ -22,10 +21,12 @@ class HomeScreen extends StatelessWidget {
           backgroundColor: Colors.transparent,
           leadingWidth: 0,
           title: Padding(
-            padding: const EdgeInsets.only(left: 10.0, top: 10),
+            padding: const EdgeInsets.only(
+              left: 10.0,
+            ),
             child: Text(
-              'Find your desire\nhealt solution',
-              style: TextStyle(color: Colors.black, fontSize: 25),
+              'Find your desire healt solution',
+              style: TextStyle(color: Colors.black, fontSize: 20),
             ),
           ),
           titleSpacing: 0,
@@ -44,64 +45,67 @@ class HomeScreen extends StatelessWidget {
       backgroundColor: Colors.white,
       body: SingleChildScrollView(
         child: Padding(
-          padding: const EdgeInsets.all(15.0),
+          padding: const EdgeInsets.all(20.0),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             // mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              TextFormField(
-                  // controller: emailaddressController,
-                  // focusNode: FocusNode(),
-                  style: const TextStyle(
-                    color: Colors.grey,
-                    fontSize: 16,
-                    fontFamily: 'Poppins',
-                    fontWeight: FontWeight.w400,
-                    height: 1.50,
-                  ),
-                  keyboardType: TextInputType.emailAddress,
-                  maxLines: 1,
-                  decoration: InputDecoration(
-                    fillColor: Colors.grey[200],
-                    filled: true,
-                    hintText: 'Search doctor,drugs,...',
-                    prefixIcon: Icon(Icons.search),
-                    hintStyle: TextStyle(
-                      color: Colors.blueGrey,
-                      fontSize: 12,
+              SizedBox(
+                height: 40,
+                child: TextFormField(
+                    // controller: emailaddressController,
+                    // focusNode: FocusNode(),
+                    style: const TextStyle(
+                      color: Colors.grey,
+                      fontSize: 16,
                       fontFamily: 'Poppins',
                       fontWeight: FontWeight.w400,
                       height: 1.50,
                     ),
-                    border: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(25),
-                      borderSide: BorderSide(
-                        color: const Color.fromARGB(255, 207, 216, 220),
-                        width: 1,
+                    keyboardType: TextInputType.emailAddress,
+                    maxLines: 1,
+                    decoration: InputDecoration(
+                      fillColor: Colors.grey[200],
+                      filled: true,
+                      hintText: 'Search doctor,drugs,...',
+                      prefixIcon: Icon(Icons.search),
+                      hintStyle: TextStyle(
+                        color: Colors.blueGrey,
+                        fontSize: 12,
+                        fontFamily: 'Poppins',
+                        fontWeight: FontWeight.w400,
+                        height: 1.50,
                       ),
-                    ),
-                    enabledBorder: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(25),
-                      borderSide: BorderSide(
-                        color: Color(0XFFEAEFFF),
-                        width: 1,
+                      border: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(25),
+                        borderSide: BorderSide(
+                          color: const Color.fromARGB(255, 207, 216, 220),
+                          width: 1,
+                        ),
                       ),
-                    ),
-                    focusedBorder: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(25),
-                      borderSide: BorderSide(
-                        color: Color(0XFFF6FDFC),
-                        width: 1,
+                      enabledBorder: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(25),
+                        borderSide: BorderSide(
+                          color: Color(0XFFEAEFFF),
+                          width: 1,
+                        ),
                       ),
-                    ),
-                    disabledBorder: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(
-                        20.00,
+                      focusedBorder: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(25),
+                        borderSide: BorderSide(
+                          color: Color(0XFFF6FDFC),
+                          width: 1,
+                        ),
                       ),
-                      borderSide: BorderSide.none,
-                    ),
-                    isDense: true,
-                  )),
+                      disabledBorder: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(
+                          20.00,
+                        ),
+                        borderSide: BorderSide.none,
+                      ),
+                      isDense: true,
+                    )),
+              ),
               SizedBox(
                 height: 20,
               ),
@@ -135,13 +139,7 @@ class HomeScreen extends StatelessWidget {
                             style: ButtonStyle(
                                 backgroundColor: MaterialStateProperty.all(
                                     Color(0XFF3A50C2))),
-                            onPressed: () {
-                              Navigator.of(context).push(
-                                MaterialPageRoute(
-                                  builder: (context) => HomeScreenTwo(),
-                                ),
-                              );
-                            },
+                            onPressed: () {},
                             child: Row(
                               mainAxisAlignment: MainAxisAlignment.center,
                               crossAxisAlignment: CrossAxisAlignment.center,
@@ -282,67 +280,76 @@ class HomeScreen extends StatelessWidget {
               SizedBox(
                 height: 10,
               ),
-              Container(
-                  padding: EdgeInsets.symmetric(horizontal: 10, vertical: 5),
-                  decoration: ShapeDecoration(
-                    shadows: [
-                      BoxShadow(
-                        color: Color(0x28000000),
-                        blurRadius: 4,
-                        offset: Offset(0, 2),
-                      )
-                    ],
-                    color: Colors.white,
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(14),
-                    ),
-                  ),
-                  child: Row(
-                    children: [
-                      Image.network(
-                        'https://media.istockphoto.com/id/529664572/photo/fruit-background.jpg?s=612x612&w=0&k=20&c=K7V0rVCGj8tvluXDqxJgu0AdMKF8axP0A15P-8Ksh3I=',
-                        height: 70,
-                        width: 70,
+              ListView.builder(
+                physics: NeverScrollableScrollPhysics(),
+                itemCount: 3,
+                shrinkWrap: true,
+                itemBuilder: (BuildContext context, int index) {
+                  return Container(
+                      margin: EdgeInsets.symmetric(vertical: 5),
+                      padding:
+                          EdgeInsets.symmetric(horizontal: 10, vertical: 5),
+                      decoration: ShapeDecoration(
+                        shadows: [
+                          BoxShadow(
+                            color: Color(0x28000000),
+                            blurRadius: 4,
+                            offset: Offset(0, 2),
+                          )
+                        ],
+                        color: Colors.white,
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(14),
+                        ),
                       ),
-                      SizedBox(
-                        width: 5,
-                      ),
-                      Container(
-                          width: 179,
-                          child: Column(
-                            children: [
-                              Text(
-                                "The 25 Healthiest Fruits You Can Eat, According to a Nutritionist",
-                                style: TextStyle(fontSize: 12),
-                              ),
-                              SizedBox(
-                                height: 10,
-                              ),
-                              Row(
+                      child: Row(
+                        children: [
+                          Image.network(
+                            'https://media.istockphoto.com/id/529664572/photo/fruit-background.jpg?s=612x612&w=0&k=20&c=K7V0rVCGj8tvluXDqxJgu0AdMKF8axP0A15P-8Ksh3I=',
+                            height: 70,
+                            width: 70,
+                          ),
+                          SizedBox(
+                            width: 5,
+                          ),
+                          Container(
+                              width: 179,
+                              child: Column(
                                 children: [
                                   Text(
-                                    "Jun 10, 2021",
-                                    style: TextStyle(
-                                        fontSize: 10,
-                                        fontWeight: FontWeight.w400,
-                                        color: Colors.grey),
+                                    "The 25 Healthiest Fruits You Can Eat, According to a Nutritionist",
+                                    style: TextStyle(fontSize: 12),
                                   ),
                                   SizedBox(
-                                    width: 10,
+                                    height: 10,
                                   ),
-                                  Text(
-                                    "5min read",
-                                    style: TextStyle(
-                                        fontSize: 10,
-                                        fontWeight: FontWeight.w400,
-                                        color: Colors.grey),
+                                  Row(
+                                    children: [
+                                      Text(
+                                        "Jun 10, 2021",
+                                        style: TextStyle(
+                                            fontSize: 10,
+                                            fontWeight: FontWeight.w400,
+                                            color: Colors.grey),
+                                      ),
+                                      SizedBox(
+                                        width: 10,
+                                      ),
+                                      Text(
+                                        "5min read",
+                                        style: TextStyle(
+                                            fontSize: 10,
+                                            fontWeight: FontWeight.w400,
+                                            color: Colors.grey),
+                                      ),
+                                    ],
                                   ),
                                 ],
-                              ),
-                            ],
-                          )),
-                    ],
-                  ))
+                              )),
+                        ],
+                      ));
+                },
+              )
             ],
           ),
         ),

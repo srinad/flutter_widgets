@@ -1,4 +1,3 @@
-import 'package:example_widgets/LoginScreenThree/login_screen3.dart';
 import 'package:flutter/material.dart';
 // ignore_for_file: must_be_immutable
 
@@ -27,7 +26,10 @@ class LoginScreen2 extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.start,
                       children: [
                         Column(children: [
-                          Image.network('https://img.freepik.com/premium-vector/healthcare-logo_10250-3455.jpg?w=2000',height: 60,width: 60,),
+                          Image.network(
+                            'https://img.freepik.com/premium-vector/healthcare-logo_10250-3455.jpg?w=2000',
+                            scale: 10,
+                          ),
                           // CustomImageView(
                           //     imagePath: ImageConstant.imgHiDocLogo42x115,
                           //     height: 42.v,
@@ -157,7 +159,9 @@ class LoginScreen2 extends StatelessWidget {
                                 ),
                                 isDense: true,
                               )),
-                              SizedBox(height: 30,),
+                          SizedBox(
+                            height: 30,
+                          ),
                           Container(
                             height: 50,
                             width: double.maxFinite,
@@ -169,13 +173,7 @@ class LoginScreen2 extends StatelessWidget {
                                   borderRadius: BorderRadius.circular(8),
                                 ),
                               ),
-                              onPressed: () {
-                                Navigator.of(context).push(
-                              MaterialPageRoute(
-                                builder: (context) => LoginScreen3(),
-                              ),
-                            );
-                              },
+                              onPressed: () {},
                               child: Row(
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 crossAxisAlignment: CrossAxisAlignment.center,
@@ -191,14 +189,28 @@ class LoginScreen2 extends StatelessWidget {
                               ),
                             ),
                           ),
-                          SizedBox(height: 30,),
-                          Text("Forgot Password?",style: TextStyle(color: Colors.white),),
-                          SizedBox(height: 100,),
-                          Row(mainAxisAlignment: MainAxisAlignment.center,
-                          crossAxisAlignment: CrossAxisAlignment.center,
+                          SizedBox(
+                            height: 30,
+                          ),
+                          Text(
+                            "Forgot Password?",
+                            style: TextStyle(color: Colors.white),
+                          ),
+                          SizedBox(
+                            height: 100,
+                          ),
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            crossAxisAlignment: CrossAxisAlignment.center,
                             children: [
-                              Text("Don't have an account?",style: TextStyle(color: Colors.white),),
-                              Text("Resigter",style: TextStyle(color: Colors.white),),
+                              Text(
+                                "Don't have an account?",
+                                style: TextStyle(color: Colors.white),
+                              ),
+                              Text(
+                                "Resigter",
+                                style: TextStyle(color: Colors.white),
+                              ),
                             ],
                           ),
                         ])

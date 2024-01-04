@@ -1,4 +1,3 @@
-import 'package:example_widgets/ProfileScreen/profile_screen.dart';
 import 'package:flutter/material.dart';
 
 // ignore: must_be_immutable
@@ -21,19 +20,17 @@ class LoginScreen3 extends StatelessWidget {
         children: [
           Expanded(
             child: Image.network(
-              'https://img.freepik.com/premium-vector/healthcare-logo 10250-3455.jpg?w=2000',
-              height: 60,
-              width: 60,
+              'https://www.iconbunny.com/icons/media/catalog/product/6/2/620.2-login-icon-iconbunny.jpg',
+              scale: 5,
             ),
           ),
           SingleChildScrollView(
             child: Container(
-              padding: EdgeInsets.only(top: 20, left: 20, right: 20, bottom: 0),
+              padding: EdgeInsets.only(top: 45, left: 20, right: 20, bottom: 5),
               decoration: BoxDecoration(
                   borderRadius: BorderRadius.only(
                       topLeft: Radius.circular(30.0),
                       topRight: Radius.circular(30.0)),
-                  // boxShadow: [tBoxShadow],
                   color: Colors.white),
               child: Column(
                 children: [
@@ -55,7 +52,7 @@ class LoginScreen3 extends StatelessWidget {
                                       Text(
                                         'Login',
                                         style: TextStyle(
-                                            fontSize: 20,
+                                            fontSize: 25,
                                             fontWeight: FontWeight.w600),
                                       ),
                                     ],
@@ -158,13 +155,7 @@ class LoginScreen3 extends StatelessWidget {
                                         borderRadius:
                                             BorderRadius.circular(25)),
                                     child: TextButton(
-                                      onPressed: () {
-                                        Navigator.of(context).push(
-                                          MaterialPageRoute(
-                                            builder: (context) => ProfileScreen(),
-                                          ),
-                                        );
-                                      },
+                                      onPressed: () {},
                                       style: TextButton.styleFrom(
                                           fixedSize: Size(
                                             double.maxFinite,

@@ -1,4 +1,3 @@
-import 'package:example_widgets/ProfileScreenTwo/profile_screen2.dart';
 import 'package:flutter/material.dart';
 
 // ignore: must_be_immutable
@@ -64,13 +63,7 @@ class ProfileScreen extends StatelessWidget {
                 height: 15,
               ),
               GestureDetector(
-                onTap: () {
-                  Navigator.of(context).push(
-                    MaterialPageRoute(
-                      builder: (context) => ProfileScreen2(),
-                    ),
-                  );
-                },
+                onTap: () {},
                 child: Container(
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(10),

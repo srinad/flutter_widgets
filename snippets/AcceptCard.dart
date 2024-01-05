@@ -1,12 +1,4 @@
-import 'package:flutter/material.dart';
-class AcceptRequestCard extends StatelessWidget {
-  const AcceptRequestCard({
-    super.key,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    return Stack(
+Stack(
       clipBehavior: Clip.none,
       children: [
         Container(
@@ -127,6 +119,4 @@ class AcceptRequestCard extends StatelessWidget {
           ),
         ),
       ],
-    );
-  }
-}
+    )

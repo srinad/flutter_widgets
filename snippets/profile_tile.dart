@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 
 class ProfileTile extends StatelessWidget {
-  const ProfileTile({super.key,required this.title,required this.icon,required this.isIn,required this.decoration});
+  ProfileTile({super.key,title,icon,isIn,decoration});
 
-  final title;
-  final icon;
-  final isIn;
-  final decoration;
+  final title = "Add Ons";
+  final icon = Icons.sailing_rounded;
+  final isIn = true;
+  final decoration = true;
   @override
   Widget build(BuildContext context) {
     return Scaffold(

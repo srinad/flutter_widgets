@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 
 //featured builder
 class FeaturedBuilder extends StatelessWidget {
-  const FeaturedBuilder({super.key,required this.count});
+  const FeaturedBuilder({super.key,count});
 
-  final int count;
+  final int count = 10;
 
   @override
   Widget build(BuildContext context) {

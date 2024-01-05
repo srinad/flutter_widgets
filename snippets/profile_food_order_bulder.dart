@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
 class FoodOrdersBuilder extends StatelessWidget {
-  const FoodOrdersBuilder({super.key,required this.heading});
+  const FoodOrdersBuilder({super.key,heading});
 
-  final String heading;
+  final String heading = "FOOD ORDER";
   @override
   Widget build(BuildContext context) {
 

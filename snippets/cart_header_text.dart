@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 
 //header text
 class HeaderText extends StatelessWidget {
-  const HeaderText({super.key,required this.title});
-  final title;
+  const HeaderText({super.key,title});
+  final title = "HELLO";
 
   @override
   Widget build(BuildContext context) {

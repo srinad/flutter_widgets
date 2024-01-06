@@ -1,46 +1,379 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Custom Widgets Gallery</title>
-        <style>
-      .card {
-        cursor: pointer;
-        width: 300px; /* Adjust as needed */
-        height: 200px; /* Adjust as needed */
-        border: 1px solid #ccc;
-        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-        transition: 0.3s;
-        margin-bottom: 15px;
-      }
 
-      .card img {
-        width: 100%;
-        height: 100%;
-      }
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Custom Widgets Gallery</title>
 
-      .card:hover {
-        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-      }
-    </style>
-    </head>
-    <body>
-        <div class="card" onclick="postMessage('AwesomeSnackbarContent')">
-            <img
-                src="https://user-images.githubusercontent.com/43790152/169772131-919389a1-3e49-43d7-b23a-9c27810b8110.png"
-                alt="Widget 1">
+  <!-- Add Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+  <style>
+    .card-container {
+      padding: 20px;
+      text-align: center;
+      /* Center the cards in the container */
+    }
+
+    .card {
+      cursor: pointer;
+      width: 150px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      transition: 0.3s;
+      display: inline-block;
+      margin: 10px;
+    }
+
+    .card img {
+      width: 100%;
+    }
+
+    .card:hover {
+      box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    }
+
+    /* Custom tab styles */
+    .nav-item {
+      display: flex;
+      justify-content: space-evenly;
+      background-color: #f2f2f2;
+      padding: 10px;
+    }
+
+    .nav-link {
+      cursor: pointer;
+      padding:  10px;
+      border-radius: 10px;
+      transition: background-color 0.3s;
+    }
+
+    .nav-link:hover {
+      background-color: #ddd;
+    }
+
+    .active-tab {
+      background-color: #ccc;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Add Bootstrap tabs structure -->
+  <ul class="nav nav-tabs" id="myTabs">
+    <li class="nav-item">
+      <a class="nav-link active" id="tab1" data-toggle="tab" href="#tabContent1">Login Screens</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link " id="tab2" data-toggle="tab" href="#tabContent2">OTP Screens</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link " id="tab3" data-toggle="tab" href="#tabContent3">Profile Screens</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link " id="tab4" data-toggle="tab" href="#tabContent4">Cart Screens</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link " id="tab5" data-toggle="tab" href="#tabContent5">Add Address Screens</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link " id="tab6" data-toggle="tab" href="#tabContent6">Home Screens</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link " id="tab7" data-toggle="tab" href="#tabContent7">Components</a>
+    </li>
+    <!-- Add more tabs as needed -->
+  </ul>
+
+  <div class="tab-content">
+    <div class="tab-pane fade show active" id="tabContent1">
+      <!-- Your existing card elements for Tab 1 -->
+      <div class="card-container">
+        <div class="card" onclick="postMessage('login_screen')">
+          <img src="
+              WidgetsImages\login_screen.jpg" alt="Widget 1">
+          <p>Login Image 1</p>
         </div>
+        <div class="card" onclick="postMessage('login_screen2')">
+          <img src="
+              WidgetsImages\login_screen2.jpg" alt="Widget 2">
+          <p>Login Image 2</p>
+        </div>
+        <div class="card" onclick="postMessage('login_screen3')">
+          <img src="
+              WidgetsImages\login_screen3.jpg" alt="Widget 3">
+          <p>Login Image 3</p>
+        </div>
+        <!-- Add more cards for Tab 1 as needed -->
+      </div>
+    </div>
 
-        <script>
-      const vscode = acquireVsCodeApi();
+    <div class="tab-pane fade" id="tabContent2">
+      <!-- Your existing card elements for Tab 2 -->
+      <div class="card-container">
+        <div class="card" onclick="postMessage('otp_screen')">
+          <img src="
+              WidgetsImages\otp_screen.jpg" alt="Widget 4">
+        </div>
+        <div class="card" onclick="postMessage('otp_screen2')">
+          <img src="
+              WidgetsImages\otp_screen2.jpg" alt="Widget 5">
+        </div>
+        <div class="card" onclick="postMessage('otp_screen3')">
+          <img src="
+              WidgetsImages\otp_screen3.jpg" alt="Widget 6">
+        </div>
+        <!-- Add more cards for Tab 2 as needed -->
+      </div>
+    </div>
+    <div class="tab-pane fade" id="tabContent3">
+      <!-- Your existing card elements for Tab 3 -->
+      <div class="card-container">
+        <div class="card" onclick="postMessage('profile_screen')">
+          <img src="
+              WidgetsImages\profile_screen.jpg" alt="Widget 7">
+        </div>
+        <div class="card" onclick="postMessage('profile_screen2')">
+          <img src="
+              WidgetsImages\profile_screen2.jpg" alt="Widget 8">
+        </div>
+        <div class="card" onclick="postMessage('profile_screen3')">
+          <img src="
+              WidgetsImages\profile_screen3.jpg" alt="Widget 2">
+        </div>
+        <div class="card" onclick="postMessage('food_delivery_profile')">
+          <img src="
+              WidgetsImages\food_delivery_profile.jpeg" alt="Widget 2">
+        </div>
+        <!-- Add more cards for Tab 3 as needed -->
+      </div>
+    </div>
+    <div class="tab-pane fade" id="tabContent4">
+      <!-- Your existing card elements for Tab 4 -->
+      <div class="card-container">
+        <div class="card" onclick="postMessage('cart_screen')">
+          <img src="
+              WidgetsImages\cart_screen.jpg" alt="Widget 2">
+        </div>
+        <div class="card" onclick="postMessage('cart_screen2')">
+          <img src="
+              WidgetsImages\cart_screen2.jpg" alt="Widget 2">
+        </div>
+        <div class="card" onclick="postMessage('cart_screen3')">
+          <img src="
+              WidgetsImages\cart_screen3.jpg" alt="Widget 2">
+        </div>
+        <div class="card" onclick="postMessage('food_delivery_cart_screen')">
+          <img src="
+              WidgetsImages\food_delivery_cart_screen.jpeg" alt="Widget 2">
+        </div>
+        <!-- Add more cards for Tab 4 as needed -->
+      </div>
+    </div>
+    <div class="tab-pane fade" id="tabContent5">
+      <!-- Your existing card elements for Tab 5 -->
+      <div class="card-container">
+        <div class="card" onclick="postMessage('add_address_screen')">
+          <img src="
+              WidgetsImages\add_address_screen.jpg" alt="Widget 2">
+        </div>
+        <div class="card" onclick="postMessage('add_address_screen2')">
+          <img src="
+              WidgetsImages\add_address_screen2.jpg" alt="Widget 2">
+        </div>
+        <div class="card" onclick="postMessage('add_address_screen3')">
+          <img src="
+              WidgetsImages\add_address_screen3.jpg" alt="Widget 2">
+        </div>
+        <!-- Add more cards for Tab 5 as needed -->
+      </div>
+    </div>
+    <div class="tab-pane fade" id="tabContent6">
+      <!-- Your existing card elements for Tab 6 -->
+      <div class="card-container">
+        <div class="card" onclick="postMessage('home_screen')">
+          <img src="
+              WidgetsImages\home_screen.jpg" alt="Widget 2">
+        </div>
+        <div class="card" onclick="postMessage('home_screen2')">
+          <img src="
+              WidgetsImages\home_screen2.jpg" alt="Widget 2">
+        </div>
+        <div class="card" onclick="postMessage('home_screen3')">
+          <img src="
+              WidgetsImages\home_screen3.jpg" alt="Widget 2">
+        </div>
+        <div class="card" onclick="postMessage('home_screen4')">
+          <img src="
+              WidgetsImages\home_screen4.jpg" alt="Widget 2">
+        </div>
+        <div class="card" onclick="postMessage('food_deivery_home_screen')">
+          <img src="
+              WidgetsImages\food_deivery_home_screen.jpeg" alt="Widget 2">
+        </div>
+        <!-- Add more cards for Tab 6 as needed -->
+      </div>
+    </div>
+    <div class="tab-pane fade" id="tabContent7">
+      <!-- Your existing card elements for Tab 7 -->
+      <div class="card-container">
+        <div class="card" onclick="postMessage('AwesomeSnackbarContent')">
+          <img
+            src="https://user-images.githubusercontent.com/43790152/169772131-919389a1-3e49-43d7-b23a-9c27810b8110.png"
+            alt="Widget 1">
+          <p>AwesomeSnackbar</p>
+        </div>
+        <div class="card" onclick="postMessage('AcceptCard')">
+          <img src="
+              WidgetsImages\accept_card.jpg" alt="Widget 2">
+          <p>Accept Card</p>
+        </div>
+        <div class="card" onclick="postMessage('date_time_card')">
+          <img src="
+              WidgetsImages\date_time_card.jpg" alt="Widget 2">
+          <p>Date & Time Card</p>
+        </div>
+        <div class="card" onclick="postMessage('master_card')">
+          <img src="
+              WidgetsImages\master_card.jpg" alt="Widget 2">
+          <p>Master Card</p>
+        </div>
+        <div class="card" onclick="postMessage('places_card')">
+          <img src="
+              WidgetsImages\places_card.jpg" alt="Widget 2">
+          <p>Places Card</p>
+        </div>
+        <div class="card" onclick="postMessage('plans_card')">
 
-      function postMessage(widgetName) {
-        vscode.postMessage({
-          command: 'insertWidgetCustom',
-          widgetName: widgetName
-        });
-      }
-    </script>
-    </body>
+          <img src="
+              WidgetsImages\plans_card.jpg" alt="Widget 2">
+          <p>Plans Card</p>
+        </div>
+        <div class="card" onclick="postMessage('profile_list_card')">
+          <img src="
+            WidgetsImages\profile_list_card.jpg" alt="Widget 2">
+          <p>Profile list card</p>
+        </div>
+        <div class="card" onclick="postMessage('travel_card')">
+          <img src="
+            WidgetsImages\travel_card.jpg" alt="Widget 2">
+          <p>Travel card</p>
+        </div>
+        <div class="card" onclick="postMessage('weather_card')">
+          <img src="
+            WidgetsImages\weather_card.jpg" alt="Widget 2">
+          <p>Weather card</p>
+        </div>
+        <div class="card" onclick="postMessage('cart_add_more')">
+          <img src="
+            WidgetsImages\cart_add_more.jpeg" alt="Widget 2">
+          <p>Cart add more</p>
+        </div>
+        <div class="card" onclick="postMessage('cart_items_added')">
+          <img src="
+            WidgetsImages\cart_added_items.jpeg" alt="Widget 2">
+          <p>Cart items added</p>
+        </div>
+        <div class="card" onclick="postMessage('cart_bill_reciept')">
+          <img src="
+            WidgetsImages\cart_bill_reciept.jpeg" alt="Widget 2">
+          <p>Bill reciept card</p>
+        </div>
+        <div class="card" onclick="postMessage('cart_bottom_card')">
+          <img src="
+            WidgetsImages\cart_bottom_card.jpeg" alt="Widget 2">
+          <p>Reciept card</p>
+        </div>
+        <div class="card" onclick="postMessage('fooddeliveryhome_explore')">
+          <img src="
+            WidgetsImages\fooddeliveryhome_explore.jpeg" alt="Widget 2">
+          <p>Explore card</p>
+        </div>
+        <div class="card" onclick="postMessage('fooddeliveryhome_featured')">
+          <img src="
+            WidgetsImages\fooddeliveryhome_featured.jpeg" alt="Widget 2">
+          <p>Featured card</p>
+        </div>
+        <div class="card" onclick="postMessage('fooddeliveryhome_for_you')">
+          <img src="
+            WidgetsImages\fooddeliveryhome_for_you.jpeg" alt="Widget 2">
+          <p>Home page card</p>
+        </div>
+        <div class="card" onclick="postMessage('fooddeliveryhome_sliverappbar_card')">
+          <img src="
+            WidgetsImages\fooddeliveryhome_sliverappbar_card.jpeg" alt="Widget 2">
+          <p>Sliver App bar</p>
+        </div>
+        <div class="card" onclick="postMessage('fooddeliveryhome_top_brands')">
+          <img src="
+            WidgetsImages\fooddeliveryhome_top_brands.jpeg" alt="Widget 2">
+          <p>Home Page component</p>
+        </div>
+        <div class="card" onclick="postMessage('fooddeliveryhome_whats_on')">
+          <img src="
+            WidgetsImages\fooddeliveryhome_whats_on.jpeg" alt="Widget 2">
+          <p>List component</p>
+        </div>
+        <div class="card" onclick="postMessage('profile_food_order_bulder')">
+          <img src="
+            WidgetsImages\profile_food_order_bulder.jpeg" alt="Widget 2">
+          <p>Profile List</p>
+        </div>
+        <div class="card" onclick="postMessage('profile_grid_items')">
+          <img src="
+            WidgetsImages\profile_grid_items.jpeg" alt="Widget 2">
+          <p>Profile Grid</p>
+        </div>
+        <div class="card" onclick="postMessage('add_post_card')">
+          <img src="
+          https://raw.githubusercontent.com/srinad/flutter_widgets/320b0e75acaf2c850612e666c7294fd476735358/WidgetsImages/add_post_card.jpg" alt="Widget 2">
+          <p>Add Post Card</p>
+        </div>
+        <div class="card" onclick="postMessage('calling_card')">
+          <img src="
+          https://raw.githubusercontent.com/srinad/flutter_widgets/320b0e75acaf2c850612e666c7294fd476735358/WidgetsImages/calling_card.jpg" alt="Widget 2">
+          <p>Calling card</p>
+        </div>
+        <div class="card" onclick="postMessage('followers_card')">
+          <img src="
+          https://raw.githubusercontent.com/srinad/flutter_widgets/320b0e75acaf2c850612e666c7294fd476735358/WidgetsImages/followers_card.jpg" alt="Widget 2">
+          <p>Followers Card</p>
+        </div>
+        <div class="card" onclick="postMessage('messages_card')">
+          <img src="
+          https://raw.githubusercontent.com/srinad/flutter_widgets/320b0e75acaf2c850612e666c7294fd476735358/WidgetsImages/messages_card.jpg" alt="Widget 2">
+          <p>Messages Card</p>
+        </div>
+        <div class="card" onclick="postMessage('trending_card')">
+          <img src="
+          https://raw.githubusercontent.com/srinad/flutter_widgets/320b0e75acaf2c850612e666c7294fd476735358/WidgetsImages/trending_card.jpg" alt="Widget 2">
+          <p>Trending Card</p>
+        </div>
+        <div class="card" onclick="postMessage('upload_file_card')">
+          <img src="
+          https://raw.githubusercontent.com/srinad/flutter_widgets/320b0e75acaf2c850612e666c7294fd476735358/WidgetsImages/upload_file_card.jpg" alt="Widget 2">
+          <p>Upload File</p>
+        </div>
+        <!-- Add more cards for Tab 7 as needed -->
+      </div>
+    </div>
+    <!-- Add more tab content as needed -->
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <script>
+    const vscode = acquireVsCodeApi();
+
+    function postMessage(widgetName) {
+      vscode.postMessage({
+        command: 'insertWidgetCustom',
+        widgetName: widgetName
+      });
+    }
+  </script>
+</body>
+
 </html>

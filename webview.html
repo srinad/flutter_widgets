@@ -17,16 +17,12 @@
     }
 
     .card {
-      /* padding: 5px; */
       cursor: pointer;
       width: 150px;
-      /* border: 1px solid #ccc; */
       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
       transition: 0.3s;
       display: inline-block;
-      /* Display cards inline */
       margin: 10px;
-      /* Adjust margin as needed */
     }
 
     .card img {
@@ -35,6 +31,29 @@
 
     .card:hover {
       box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    }
+
+    /* Custom tab styles */
+    .nav-item {
+      display: flex;
+      justify-content: space-evenly;
+      background-color: #f2f2f2;
+      padding: 10px;
+    }
+
+    .nav-link {
+      cursor: pointer;
+      padding:  10px;
+      border-radius: 10px;
+      transition: background-color 0.3s;
+    }
+
+    .nav-link:hover {
+      background-color: #ddd;
+    }
+
+    .active-tab {
+      background-color: #ccc;
     }
   </style>
 </head>
@@ -202,107 +221,138 @@
           <img
             src="https://user-images.githubusercontent.com/43790152/169772131-919389a1-3e49-43d7-b23a-9c27810b8110.png"
             alt="Widget 1">
-            <p>AwesomeSnackbar</p>
+          <p>AwesomeSnackbar</p>
         </div>
         <div class="card" onclick="postMessage('AcceptCard')">
           <img src="
               WidgetsImages\accept_card.jpg" alt="Widget 2">
-              <p>Accept Card</p>
+          <p>Accept Card</p>
         </div>
         <div class="card" onclick="postMessage('date_time_card')">
           <img src="
               WidgetsImages\date_time_card.jpg" alt="Widget 2">
-              <p>Date & Time Card</p>
+          <p>Date & Time Card</p>
         </div>
         <div class="card" onclick="postMessage('master_card')">
           <img src="
               WidgetsImages\master_card.jpg" alt="Widget 2">
-              <p>Master Card</p>
+          <p>Master Card</p>
         </div>
         <div class="card" onclick="postMessage('places_card')">
           <img src="
               WidgetsImages\places_card.jpg" alt="Widget 2">
+          <p>Places Card</p>
         </div>
         <div class="card" onclick="postMessage('plans_card')">
-          <p>Places Card</p>
+
           <img src="
               WidgetsImages\plans_card.jpg" alt="Widget 2">
-              <p>Plans Card</p>
+          <p>Plans Card</p>
         </div>
         <div class="card" onclick="postMessage('profile_list_card')">
           <img src="
             WidgetsImages\profile_list_card.jpg" alt="Widget 2">
-            <p>Profile list card</p>
+          <p>Profile list card</p>
         </div>
         <div class="card" onclick="postMessage('travel_card')">
           <img src="
             WidgetsImages\travel_card.jpg" alt="Widget 2">
-            <p>Travel card</p>
+          <p>Travel card</p>
         </div>
         <div class="card" onclick="postMessage('weather_card')">
           <img src="
             WidgetsImages\weather_card.jpg" alt="Widget 2">
-            <p>Weather card</p>
+          <p>Weather card</p>
         </div>
         <div class="card" onclick="postMessage('cart_add_more')">
           <img src="
             WidgetsImages\cart_add_more.jpeg" alt="Widget 2">
-            <p>Cart add more</p>
+          <p>Cart add more</p>
         </div>
         <div class="card" onclick="postMessage('cart_items_added')">
           <img src="
             WidgetsImages\cart_added_items.jpeg" alt="Widget 2">
-            <p>Cart items added</p>
+          <p>Cart items added</p>
         </div>
         <div class="card" onclick="postMessage('cart_bill_reciept')">
           <img src="
             WidgetsImages\cart_bill_reciept.jpeg" alt="Widget 2">
-            <p>Bill reciept card</p>
+          <p>Bill reciept card</p>
         </div>
         <div class="card" onclick="postMessage('cart_bottom_card')">
           <img src="
             WidgetsImages\cart_bottom_card.jpeg" alt="Widget 2">
-            <p>Reciept card</p>
+          <p>Reciept card</p>
         </div>
         <div class="card" onclick="postMessage('fooddeliveryhome_explore')">
           <img src="
             WidgetsImages\fooddeliveryhome_explore.jpeg" alt="Widget 2">
-            <p>Explore card</p>
+          <p>Explore card</p>
         </div>
         <div class="card" onclick="postMessage('fooddeliveryhome_featured')">
           <img src="
             WidgetsImages\fooddeliveryhome_featured.jpeg" alt="Widget 2">
-            <p>Featured card</p>
+          <p>Featured card</p>
         </div>
         <div class="card" onclick="postMessage('fooddeliveryhome_for_you')">
           <img src="
             WidgetsImages\fooddeliveryhome_for_you.jpeg" alt="Widget 2">
-            <p>Home page card</p>
+          <p>Home page card</p>
         </div>
         <div class="card" onclick="postMessage('fooddeliveryhome_sliverappbar_card')">
           <img src="
             WidgetsImages\fooddeliveryhome_sliverappbar_card.jpeg" alt="Widget 2">
-            <p>Sliver App bar</p>
+          <p>Sliver App bar</p>
         </div>
         <div class="card" onclick="postMessage('fooddeliveryhome_top_brands')">
           <img src="
             WidgetsImages\fooddeliveryhome_top_brands.jpeg" alt="Widget 2">
-            <p>Home Page component</p>
+          <p>Home Page component</p>
         </div>
         <div class="card" onclick="postMessage('fooddeliveryhome_whats_on')">
           <img src="
             WidgetsImages\fooddeliveryhome_whats_on.jpeg" alt="Widget 2">
-            <p>List component</p>
+          <p>List component</p>
         </div>
         <div class="card" onclick="postMessage('profile_food_order_bulder')">
           <img src="
             WidgetsImages\profile_food_order_bulder.jpeg" alt="Widget 2">
-            <p>Profile List</p>
+          <p>Profile List</p>
         </div>
         <div class="card" onclick="postMessage('profile_grid_items')">
           <img src="
             WidgetsImages\profile_grid_items.jpeg" alt="Widget 2">
-            <p>Profile Grid</p>
+          <p>Profile Grid</p>
+        </div>
+        <div class="card" onclick="postMessage('add_post_card')">
+          <img src="
+          WidgetsImages\add_post_card.jpg" alt="Widget 2">
+          <p>Add Post Card</p>
+        </div>
+        <div class="card" onclick="postMessage('calling_card')">
+          <img src="
+          WidgetsImages\calling_card.jpg" alt="Widget 2">
+          <p>Calling card</p>
+        </div>
+        <div class="card" onclick="postMessage('followers_card')">
+          <img src="
+          WidgetsImages\followers_card.jpg" alt="Widget 2">
+          <p>Followers Card</p>
+        </div>
+        <div class="card" onclick="postMessage('messages_card')">
+          <img src="
+          WidgetsImages\messages_card.jpg" alt="Widget 2">
+          <p>Messages Card</p>
+        </div>
+        <div class="card" onclick="postMessage('trending_card')">
+          <img src="
+          WidgetsImages\trending_card.jpg" alt="Widget 2">
+          <p>Trending Card</p>
+        </div>
+        <div class="card" onclick="postMessage('upload_file_card')">
+          <img src="
+          WidgetsImages\upload_file_card.jpg" alt="Widget 2">
+          <p>Upload File</p>
         </div>
         <!-- Add more cards for Tab 7 as needed -->
       </div>

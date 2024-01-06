@@ -1,13 +1,4 @@
-import 'package:flutter/material.dart';
-
-
-//more list
-class AddMore extends StatelessWidget {
-  const AddMore({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
+Scaffold(
       appBar: AppBar(
         automaticallyImplyLeading: false,
         // leading: Icon(
@@ -47,6 +38,4 @@ class AddMore extends StatelessWidget {
           ),
         ),
       ),
-    );
-  }
-}
+    )

@@ -1,12 +1,4 @@
-import 'package:flutter/material.dart';
-class ProfilesListCard extends StatelessWidget {
-  const ProfilesListCard({
-    super.key,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
+Container(
       padding: EdgeInsets.symmetric(horizontal: 10, vertical: 10),
       decoration: ShapeDecoration(
         color: Colors.grey[200],
@@ -154,6 +146,4 @@ class ProfilesListCard extends StatelessWidget {
           ],
         ),
       ),
-    );
-  }
-}
+    )

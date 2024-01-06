@@ -1,12 +1,4 @@
-import 'package:flutter/material.dart';
-class MasterCardComponent extends StatelessWidget {
-  const MasterCardComponent({
-    super.key,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
+Container(
       padding: EdgeInsets.symmetric(horizontal: 20, vertical: 20),
       decoration: ShapeDecoration(
         color: Colors.deepPurpleAccent[100],
@@ -86,6 +78,4 @@ class MasterCardComponent extends StatelessWidget {
           ),
         ],
       ),
-    );
-  }
-}
+    )

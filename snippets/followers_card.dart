@@ -1,12 +1,4 @@
-import 'package:flutter/material.dart';
-class FollowersCard extends StatelessWidget {
-  const FollowersCard({
-    super.key,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
+Container(
       padding: EdgeInsets.symmetric(horizontal: 10, vertical: 10),
       decoration: ShapeDecoration(
         color: Colors.white,
@@ -122,6 +114,4 @@ class FollowersCard extends StatelessWidget {
           )
         ],
       ),
-    );
-  }
-}
+    )

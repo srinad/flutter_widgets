@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 
-
-
 //addeditems
 class AddedItems extends StatefulWidget {
   const AddedItems({super.key});
@@ -30,10 +28,8 @@ class _AddedItemsState extends State<AddedItems> {
         ),
       ),
       body: SingleChildScrollView(
-        
         child: Container(
-          
-          padding: EdgeInsets.symmetric(horizontal: 15,vertical: 12),
+          padding: EdgeInsets.symmetric(horizontal: 15, vertical: 12),
           decoration: BoxDecoration(
             color: Colors.white,
             borderRadius: BorderRadius.circular(12),
@@ -65,9 +61,8 @@ class AddedItem extends StatefulWidget {
 }
 
 class _AddedItemState extends State<AddedItem> {
-
   int itemCount = 1;
-  int itemPrice= 120;
+  int itemPrice = 120;
 
   @override
   Widget build(BuildContext context) {
@@ -83,7 +78,7 @@ class _AddedItemState extends State<AddedItem> {
           Column(
             children: [
               Container(
-                width: MediaQuery.of(context).size.width*.8,
+                width: MediaQuery.of(context).size.width * .8,
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
@@ -92,24 +87,36 @@ class _AddedItemState extends State<AddedItem> {
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Text("Special Chicken Biryani",style: TextStyle(
-                            color: Colors.black,
-                            fontWeight: FontWeight.bold,
-                            fontSize: 16,
-                          ),),
-                          SizedBox(height: 3,),
-                          Text("₹$itemPrice",style: TextStyle(
-                            color: Colors.black,
-                            fontWeight: FontWeight.w500,
-                            fontSize: 15,
-                          ),),
-                          SizedBox(height: 3,),
-                          Text("Edit >",style: TextStyle(
-                            color: Color(0XFFE23744),
-                            fontWeight: FontWeight.w500,
-                            fontSize: 15,
-                          ),),
-                          
+                          Text(
+                            "Special Chicken Biryani",
+                            style: TextStyle(
+                              color: Colors.black,
+                              fontWeight: FontWeight.bold,
+                              fontSize: 16,
+                            ),
+                          ),
+                          SizedBox(
+                            height: 3,
+                          ),
+                          Text(
+                            "₹$itemPrice",
+                            style: TextStyle(
+                              color: Colors.black,
+                              fontWeight: FontWeight.w500,
+                              fontSize: 15,
+                            ),
+                          ),
+                          SizedBox(
+                            height: 3,
+                          ),
+                          Text(
+                            "Edit >",
+                            style: TextStyle(
+                              color: Color(0XFFE23744),
+                              fontWeight: FontWeight.w500,
+                              fontSize: 15,
+                            ),
+                          ),
                         ],
                       ),
                     ),
@@ -121,50 +128,64 @@ class _AddedItemState extends State<AddedItem> {
                         children: [
                           Container(
                             width: 80,
-                            padding: EdgeInsets.symmetric(horizontal: 0,vertical: 2),
+                            padding: EdgeInsets.symmetric(
+                                horizontal: 0, vertical: 2),
                             decoration: BoxDecoration(
-                              color: Color.fromARGB(255, 255, 238, 240),
-                              borderRadius: BorderRadius.circular(8),
-                              border: Border.all(
-                                color: Color(0XFFE23744)
-                              )
-                            ),
+                                color: Color.fromARGB(255, 255, 238, 240),
+                                borderRadius: BorderRadius.circular(8),
+                                border: Border.all(color: Color(0XFFE23744))),
                             child: Row(
                               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                               children: [
                                 InkWell(
-                                  onTap: () {
-                                    if(itemCount<2){
-                                      return;
-                                    }else{
-                                      setState(() {
-                                        itemCount--;
-                                      });
-                                    }
-                                  },
-                                  child: Icon(Icons.remove,size: 15,color: Color(0XFFE23744),)),
-                                Text("$itemCount",style: TextStyle(
-                                  color: Colors.black,
-                                  fontSize: 16,
-                                  fontWeight: FontWeight.w500,
-                                ),),
+                                    onTap: () {
+                                      if (itemCount < 2) {
+                                        return;
+                                      } else {
+                                        setState(() {
+                                          itemCount--;
+                                        });
+                                      }
+                                    },
+                                    child: Icon(
+                                      Icons.remove,
+                                      size: 15,
+                                      color: Color(0XFFE23744),
+                                    )),
+                                Text(
+                                  "$itemCount",
+                                  style: TextStyle(
+                                    color: Colors.black,
+                                    fontSize: 16,
+                                    fontWeight: FontWeight.w500,
+                                  ),
+                                ),
                                 InkWell(
-                                  onTap: () {
-                                    setState(() {
-                                      itemCount++;
-                                    });
-                                  },
-                                  child: Icon(Icons.add,size: 15,color: Color(0XFFE23744),)),
+                                    onTap: () {
+                                      setState(() {
+                                        itemCount++;
+                                      });
+                                    },
+                                    child: Icon(
+                                      Icons.add,
+                                      size: 15,
+                                      color: Color(0XFFE23744),
+                                    )),
                               ],
                             ),
                           ),
-                          SizedBox(height: 3,),
+                          SizedBox(
+                            height: 3,
+                          ),
                           //price text
-                          Text("₹${itemPrice*itemCount}",style: TextStyle(
-                            color: Colors.black,
-                            fontSize: 16,
-                            fontWeight: FontWeight.w500,
-                          ),),
+                          Text(
+                            "₹${itemPrice * itemCount}",
+                            style: TextStyle(
+                              color: Colors.black,
+                              fontSize: 16,
+                              fontWeight: FontWeight.w500,
+                            ),
+                          ),
                         ],
                       ),
                     )
@@ -178,7 +199,3 @@ class _AddedItemState extends State<AddedItem> {
     );
   }
 }
-
-
-
-    

@@ -1,12 +1,4 @@
-import 'package:flutter/material.dart';
-class AddPostCard extends StatelessWidget {
-  const AddPostCard({
-    super.key,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
+Container(
       padding: EdgeInsets.symmetric(horizontal: 15, vertical: 15),
       decoration: ShapeDecoration(
         color: Colors.white,
@@ -130,6 +122,4 @@ class AddPostCard extends StatelessWidget {
           ),
         ],
       ),
-    );
-  }
-}
+    )

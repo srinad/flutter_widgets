@@ -14,9 +14,11 @@ Container(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           ClipRRect(
-              borderRadius: BorderRadius.circular(10),
-              child: Image.network(
-                  'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQniFWf6WWrWMBV9RonPwqrHsPm9xuzrRJ6bA&usqp=CAU')),
+              borderRadius: BorderRadius.circular(30),
+              child: Center(
+                child: Image.network(
+                    'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQniFWf6WWrWMBV9RonPwqrHsPm9xuzrRJ6bA&usqp=CAU'),
+              )),
           SizedBox(height: 5),
           Text(
             'Update payment method',
@@ -54,10 +56,10 @@ Container(
                     SizedBox(height: 5),
                     Container(
                       height: 42,
-                      width: 205,
+                      width: 225,
                       child: TextFormField(
                         decoration: InputDecoration(
-                          hintText: 'Enter Coupon Code',
+                          hintText: 'Enter Name on Card',
                           hintStyle: TextStyle(
                             color: Color(0xFF7C7C7C),
                             fontSize: 14,
@@ -123,10 +125,10 @@ Container(
                     SizedBox(height: 5),
                     Container(
                       height: 42,
-                      width: 205,
+                      width: 225,
                       child: TextFormField(
                         decoration: InputDecoration(
-                          hintText: 'Enter Coupon Code',
+                          hintText: 'Enter Card Number',
                           hintStyle: TextStyle(
                             color: Color(0xFF7C7C7C),
                             fontSize: 14,
@@ -177,7 +179,7 @@ Container(
           ),
           SizedBox(height: 20),
           Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               SizedBox(
                 width: 140,

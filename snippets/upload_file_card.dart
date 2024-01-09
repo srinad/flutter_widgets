@@ -1,12 +1,4 @@
-import 'package:flutter/material.dart';
-class UploadFileCard extends StatelessWidget {
-  const UploadFileCard({
-    super.key,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
+Container(
       padding: EdgeInsets.symmetric(horizontal: 15, vertical: 15),
       decoration: ShapeDecoration(
         color: Colors.white,
@@ -159,6 +151,4 @@ class UploadFileCard extends StatelessWidget {
           ),
         ],
       ),
-    );
-  }
-}
+    )

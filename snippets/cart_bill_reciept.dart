@@ -1,34 +1,4 @@
-import 'package:flutter/material.dart';
-
-//bill summary
-class BillRecipt extends StatefulWidget {
-  const BillRecipt({super.key});
-
-  @override
-  State<BillRecipt> createState() => _BillReciptState();
-}
-
-class _BillReciptState extends State<BillRecipt> {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        automaticallyImplyLeading: false,
-        // leading: Icon(
-        //   Icons.arrow_back_ios_new_rounded,
-        //   color: Colors.black,
-        // ),
-        backgroundColor: Colors.grey[200],
-        elevation: 0,
-        centerTitle: false,
-        title: Text(
-          "Bill Reciept",
-          style: TextStyle(
-              fontSize: 20, fontWeight: FontWeight.w700, color: Colors.black),
-        ),
-      ),
-      body: SingleChildScrollView(
-        child: Container(
+Container(
           padding: EdgeInsets.symmetric(horizontal: 15,vertical: 15),
           decoration: BoxDecoration(
             color: Colors.white,
@@ -127,9 +97,4 @@ class _BillReciptState extends State<BillRecipt> {
         
             ],
           ),
-        ),
-      ),
-    );
-  }
-}
-  
+        )

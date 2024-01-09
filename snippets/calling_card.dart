@@ -1,12 +1,4 @@
-import 'package:flutter/material.dart';
-class CallComponent extends StatelessWidget {
-  const CallComponent({
-    super.key,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
+Container(
       padding: EdgeInsets.symmetric(horizontal: 60, vertical: 20),
       decoration: ShapeDecoration(
         color: Colors.white,
@@ -85,6 +77,4 @@ class CallComponent extends StatelessWidget {
           )
         ],
       ),
-    );
-  }
-}
+    )

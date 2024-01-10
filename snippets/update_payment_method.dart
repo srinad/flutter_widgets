@@ -13,12 +13,15 @@ Container(
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          ClipRRect(
-              borderRadius: BorderRadius.circular(30),
-              child: Center(
-                child: Image.network(
-                    'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQniFWf6WWrWMBV9RonPwqrHsPm9xuzrRJ6bA&usqp=CAU'),
-              )),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              ClipRRect(
+                  borderRadius: BorderRadius.circular(10),
+                  child: Image.network(
+                      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQniFWf6WWrWMBV9RonPwqrHsPm9xuzrRJ6bA&usqp=CAU')),
+            ],
+          ),
           SizedBox(height: 5),
           Text(
             'Update payment method',
@@ -70,11 +73,13 @@ Container(
                           fillColor: Colors.white,
                           focusedBorder: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(10),
-                              borderSide: BorderSide(color: Color.fromARGB(255, 224, 222, 222))),
+                              borderSide: BorderSide(
+                                  color: Color.fromARGB(255, 224, 222, 222))),
                           contentPadding: EdgeInsets.symmetric(horizontal: 10),
                           enabledBorder: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(10),
-                              borderSide: BorderSide(color: Color.fromARGB(255, 224, 222, 222))),
+                              borderSide: BorderSide(
+                                  color: Color.fromARGB(255, 224, 222, 222))),
                         ),
                       ),
                     ),
@@ -97,7 +102,8 @@ Container(
                     padding: EdgeInsets.symmetric(vertical: 10, horizontal: 13),
                     decoration: ShapeDecoration(
                       shape: RoundedRectangleBorder(
-                          side: BorderSide(color: Color.fromARGB(255, 224, 222, 222)),
+                          side: BorderSide(
+                              color: Color.fromARGB(255, 224, 222, 222)),
                           borderRadius: BorderRadius.circular(8)),
                     ),
                     child: Text('06/2024'),
@@ -139,11 +145,13 @@ Container(
                           fillColor: Colors.white,
                           focusedBorder: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(10),
-                              borderSide: BorderSide(color: Color.fromARGB(255, 224, 222, 222))),
+                              borderSide: BorderSide(
+                                  color: Color.fromARGB(255, 224, 222, 222))),
                           contentPadding: EdgeInsets.symmetric(horizontal: 10),
                           enabledBorder: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(10),
-                              borderSide: BorderSide(color: Color.fromARGB(255, 224, 222, 222))),
+                              borderSide: BorderSide(
+                                  color: Color.fromARGB(255, 224, 222, 222))),
                         ),
                       ),
                     ),
@@ -168,7 +176,8 @@ Container(
                     // padding: EdgeInsets.symmetric(vertical: 10, horizontal: 20),
                     decoration: ShapeDecoration(
                       shape: RoundedRectangleBorder(
-                          side: BorderSide(color: Color.fromARGB(255, 224, 222, 222)),
+                          side: BorderSide(
+                              color: Color.fromARGB(255, 224, 222, 222)),
                           borderRadius: BorderRadius.circular(8)),
                     ),
                     child: Center(child: Text('***')),

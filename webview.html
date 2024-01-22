@@ -17,6 +17,7 @@
     }
 
     .card {
+      border: 10px;
       cursor: pointer;
       width: 200px;
       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -27,6 +28,9 @@
 
     .card img {
       width: 100%;
+      border: 2px solid #a7a2a2e5;
+      /* Add border style here */
+      border-radius: 8px;
     }
 
     .card:hover {
@@ -110,6 +114,13 @@
             alt="Widget 3">
           <p>Login Image 3</p>
         </div>
+        <div class="card" onclick="postMessage('pinky_login_screen')">
+          <img
+            src="
+            https://raw.githubusercontent.com/srinad/flutter_widgets/c782abd225e240cae2e692b56ce1f1e912a2488f/WidgetsImages/pinky_login_screen.jpg"
+            alt="Widget 3">
+          <p>Login Image 4</p>
+        </div>
         <!-- Add more cards for Tab 1 as needed -->
       </div>
     </div>
@@ -133,6 +144,12 @@
           <img
             src="
           https://raw.githubusercontent.com/srinad/flutter_widgets/92fcabdd985a2eba74fc0845f5e61e36efffdc1b/WidgetsImages/otp_screen3.jpg"
+            alt="Widget 6">
+        </div>
+        <div class="card" onclick="postMessage('pinky_otp_screen')">
+          <img
+            src="
+            https://raw.githubusercontent.com/srinad/flutter_widgets/c782abd225e240cae2e692b56ce1f1e912a2488f/WidgetsImages/pinky_otp_screen.jpg"
             alt="Widget 6">
         </div>
         <!-- Add more cards for Tab 2 as needed -->
@@ -163,6 +180,12 @@
           <img
             src="
             https://raw.githubusercontent.com/srinad/flutter_widgets/87c008f3766d1e817101eb95b80251a78a47f718/WidgetsImages/profile_screen4.jpg"
+            alt="Widget 2">
+        </div>
+        <div class="card" onclick="postMessage('details_screen')">
+          <img
+            src="
+            https://raw.githubusercontent.com/srinad/flutter_widgets/c782abd225e240cae2e692b56ce1f1e912a2488f/WidgetsImages/details_screen.jpg"
             alt="Widget 2">
         </div>
         <div class="card" onclick="postMessage('food_delivery_profile')">
@@ -199,6 +222,12 @@
           <img
             src="
             https://raw.githubusercontent.com/srinad/flutter_widgets/7ca562bd12b5b163501f2cb4c7ae17871b8fc234/WidgetsImages/cart_screen4.jpg"
+            alt="Widget 2">
+        </div>
+        <div class="card" onclick="postMessage('cart_screen5')">
+          <img
+            src="
+            https://raw.githubusercontent.com/srinad/flutter_widgets/c782abd225e240cae2e692b56ce1f1e912a2488f/WidgetsImages/cart_screen5.jpg"
             alt="Widget 2">
         </div>
         <div class="card" onclick="postMessage('food_delivery_cart_screen')">
@@ -327,10 +356,34 @@
             https://raw.githubusercontent.com/srinad/flutter_widgets/fbc475588c1a4570049fed0ca2fd8624078080b1/WidgetsImages/home_screen19.jpg"
             alt="Widget 2">
         </div>
+        <div class="card" onclick="postMessage('home_screen21')">
+          <img
+            src="
+            https://raw.githubusercontent.com/srinad/flutter_widgets/c782abd225e240cae2e692b56ce1f1e912a2488f/WidgetsImages/home_screen21.jpg"
+            alt="Widget 2">
+        </div>
+        <div class="card" onclick="postMessage('pink_food_home_screen')">
+          <img
+            src="
+            https://raw.githubusercontent.com/srinad/flutter_widgets/c782abd225e240cae2e692b56ce1f1e912a2488f/WidgetsImages/pink_food_home_screen.jpg"
+            alt="Widget 2">
+        </div>
         <div class="card" onclick="postMessage('go_fresh_home_screen')">
           <img
             src="
             https://raw.githubusercontent.com/srinad/flutter_widgets/fbc475588c1a4570049fed0ca2fd8624078080b1/WidgetsImages/go_fresh_home_screen.jpg"
+            alt="Widget 2">
+        </div>
+        <div class="card" onclick="postMessage('pinky_near_by_screen')">
+          <img
+            src="
+            https://raw.githubusercontent.com/srinad/flutter_widgets/c782abd225e240cae2e692b56ce1f1e912a2488f/WidgetsImages/pinky_near_by_screen.jpg"
+            alt="Widget 2">
+        </div>
+        <div class="card" onclick="postMessage('pinky_popular_restaurants')">
+          <img
+            src="
+            https://raw.githubusercontent.com/srinad/flutter_widgets/c782abd225e240cae2e692b56ce1f1e912a2488f/WidgetsImages/pinky_popular_restaurants.jpg"
             alt="Widget 2">
         </div>
         <div class="card" onclick="postMessage('uberapp_body')">
@@ -577,63 +630,94 @@
           <p>Upload File</p>
         </div>
         <div class="card" onclick="postMessage('congrats_card')">
-          <img src="
-          https://raw.githubusercontent.com/srinad/flutter_widgets/dba04e027de76065629b248aece231e44ce047e6/WidgetsImages/congrats_card.jpg" alt="Widget 2">
+          <img
+            src="
+          https://raw.githubusercontent.com/srinad/flutter_widgets/dba04e027de76065629b248aece231e44ce047e6/WidgetsImages/congrats_card.jpg"
+            alt="Widget 2">
           <p>Upload File</p>
         </div>
         <div class="card" onclick="postMessage('delete_card')">
-          <img src="
-          https://raw.githubusercontent.com/srinad/flutter_widgets/dba04e027de76065629b248aece231e44ce047e6/WidgetsImages/delete_card.jpg" alt="Widget 2">
+          <img
+            src="
+          https://raw.githubusercontent.com/srinad/flutter_widgets/dba04e027de76065629b248aece231e44ce047e6/WidgetsImages/delete_card.jpg"
+            alt="Widget 2">
           <p>Upload File</p>
         </div>
         <div class="card" onclick="postMessage('measurement_sizes')">
-          <img src="
-          https://raw.githubusercontent.com/srinad/flutter_widgets/4f32912e9cb82baf91798970a3e9c7674f6a0711/WidgetsImages/measurement_sizes.jpg" alt="Widget 2">
+          <img
+            src="
+          https://raw.githubusercontent.com/srinad/flutter_widgets/4f32912e9cb82baf91798970a3e9c7674f6a0711/WidgetsImages/measurement_sizes.jpg"
+            alt="Widget 2">
           <p>Upload File</p>
         </div>
         <div class="card" onclick="postMessage('payment_screen')">
-          <img src="
-          https://raw.githubusercontent.com/srinad/flutter_widgets/4f32912e9cb82baf91798970a3e9c7674f6a0711/WidgetsImages/payment_screen.jpg" alt="Widget 2">
+          <img
+            src="
+          https://raw.githubusercontent.com/srinad/flutter_widgets/4f32912e9cb82baf91798970a3e9c7674f6a0711/WidgetsImages/payment_screen.jpg"
+            alt="Widget 2">
           <p>Upload File</p>
         </div>
         <div class="card" onclick="postMessage('update_card')">
-          <img src="
-          https://raw.githubusercontent.com/srinad/flutter_widgets/dba04e027de76065629b248aece231e44ce047e6/WidgetsImages/update_card.jpg" alt="Widget 2">
+          <img
+            src="
+          https://raw.githubusercontent.com/srinad/flutter_widgets/dba04e027de76065629b248aece231e44ce047e6/WidgetsImages/update_card.jpg"
+            alt="Widget 2">
           <p>Upload File</p>
         </div>
         <div class="card" onclick="postMessage('update_payment_method')">
-          <img src="
-          https://raw.githubusercontent.com/srinad/flutter_widgets/4f32912e9cb82baf91798970a3e9c7674f6a0711/WidgetsImages/update_payment_method.jpg" alt="Widget 2">
+          <img
+            src="
+          https://raw.githubusercontent.com/srinad/flutter_widgets/4f32912e9cb82baf91798970a3e9c7674f6a0711/WidgetsImages/update_payment_method.jpg"
+            alt="Widget 2">
           <p>Upload File</p>
         </div>
         <div class="card" onclick="postMessage('upload_video')">
-          <img src="
-          https://raw.githubusercontent.com/srinad/flutter_widgets/4f32912e9cb82baf91798970a3e9c7674f6a0711/WidgetsImages/upload_video.jpg" alt="Widget 2">
+          <img
+            src="
+          https://raw.githubusercontent.com/srinad/flutter_widgets/4f32912e9cb82baf91798970a3e9c7674f6a0711/WidgetsImages/upload_video.jpg"
+            alt="Widget 2">
           <p>Upload File</p>
         </div>
         <div class="card" onclick="postMessage('warning_card')">
-          <img src="
-          https://raw.githubusercontent.com/srinad/flutter_widgets/dba04e027de76065629b248aece231e44ce047e6/WidgetsImages/warning_card.jpg" alt="Widget 2">
+          <img
+            src="
+          https://raw.githubusercontent.com/srinad/flutter_widgets/dba04e027de76065629b248aece231e44ce047e6/WidgetsImages/warning_card.jpg"
+            alt="Widget 2">
           <p>Upload File</p>
         </div>
         <div class="card" onclick="postMessage('wallet')">
-          <img src="
-          https://raw.githubusercontent.com/srinad/flutter_widgets/4766ba9b03a602c947310bf78187cb944a373d59/WidgetsImages/wallet.jpg" alt="Widget 2">
+          <img
+            src="
+          https://raw.githubusercontent.com/srinad/flutter_widgets/4766ba9b03a602c947310bf78187cb944a373d59/WidgetsImages/wallet.jpg"
+            alt="Widget 2">
           <p>Upload File</p>
         </div>
         <div class="card" onclick="postMessage('category_screen')">
-          <img src="
-          https://raw.githubusercontent.com/srinad/flutter_widgets/87c008f3766d1e817101eb95b80251a78a47f718/WidgetsImages/category_screen.jpg" alt="Widget 2">
+          <img
+            src="
+          https://raw.githubusercontent.com/srinad/flutter_widgets/87c008f3766d1e817101eb95b80251a78a47f718/WidgetsImages/category_screen.jpg"
+            alt="Widget 2">
+          <p>Upload File</p>
+        </div>
+        <div class="card" onclick="postMessage('category_screen2')">
+          <img
+            src="
+          https://raw.githubusercontent.com/srinad/flutter_widgets/c782abd225e240cae2e692b56ce1f1e912a2488f/WidgetsImages/category_screen2.jpg"
+            alt="Widget 2">
           <p>Upload File</p>
         </div>
         <div class="card" onclick="postMessage('time_slot_screen')">
-          <img src="
-          https://raw.githubusercontent.com/srinad/flutter_widgets/87c008f3766d1e817101eb95b80251a78a47f718/WidgetsImages/time_slot_screen.jpg" alt="Widget 2">
+          <img
+            src="
+          https://raw.githubusercontent.com/srinad/flutter_widgets/87c008f3766d1e817101eb95b80251a78a47f718/WidgetsImages/time_slot_screen.jpg"
+            alt="Widget 2">
           <p>Upload File</p>
         </div>
         <div class="card" onclick="postMessage('order_history')">
-          <img src="
-          https://raw.githubusercontent.com/srinad/flutter_widgets/fbc475588c1a4570049fed0ca2fd8624078080b1/WidgetsImages/order_history.jpg" alt="Widget 2">
+          <img
+            src="
+          https://raw.githubusercontent.com/srinad/flutter_widgets/fbc475588c1a4570049fed0ca2fd8624078080b1/WidgetsImages/order_history.jpg"
+            alt="Widget 2">
           <p>Upload File</p>
         </div>
 

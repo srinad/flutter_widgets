@@ -654,6 +654,62 @@
                                 alt="Widget 2">
                         </div>
                     </div>
+                    <div class="col-md-3 mb-3">
+                        <div class="card" onclick="postMessage('bottom_navigation1')">
+                            <img src="
+                            https://raw.githubusercontent.com/srinad/flutter_widgets/013e291b8f5f4e49b285f23c1a4ce1b26fb6a7b0/WidgetsImages/bottom_navigation1.jpg"
+                                alt="Widget 2">
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <div class="card" onclick="postMessage('bottom_navigation2')">
+                            <img src="
+                            https://raw.githubusercontent.com/srinad/flutter_widgets/013e291b8f5f4e49b285f23c1a4ce1b26fb6a7b0/WidgetsImages/bottom_navigation2.jpg"
+                                alt="Widget 2">
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <div class="card" onclick="postMessage('bottom_navigation3')">
+                            <img src="
+                            https://raw.githubusercontent.com/srinad/flutter_widgets/013e291b8f5f4e49b285f23c1a4ce1b26fb6a7b0/WidgetsImages/bottom_navigation3.jpg"
+                                alt="Widget 2">
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <div class="card" onclick="postMessage('calender_screen1')">
+                            <img src="
+                            https://raw.githubusercontent.com/srinad/flutter_widgets/013e291b8f5f4e49b285f23c1a4ce1b26fb6a7b0/WidgetsImages/calender_screen1.jpg"
+                                alt="Widget 2">
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <div class="card" onclick="postMessage('calender_screen2')">
+                            <img src="
+                            https://raw.githubusercontent.com/srinad/flutter_widgets/013e291b8f5f4e49b285f23c1a4ce1b26fb6a7b0/WidgetsImages/calender_screen2.jpg"
+                                alt="Widget 2">
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <div class="card" onclick="postMessage('calender_screen3')">
+                            <img src="
+                            https://raw.githubusercontent.com/srinad/flutter_widgets/013e291b8f5f4e49b285f23c1a4ce1b26fb6a7b0/WidgetsImages/calender_screen3.jpg"
+                                alt="Widget 2">
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <div class="card" onclick="postMessage('calender_screen4')">
+                            <img src="
+                            https://raw.githubusercontent.com/srinad/flutter_widgets/013e291b8f5f4e49b285f23c1a4ce1b26fb6a7b0/WidgetsImages/calender_screen4.jpg"
+                                alt="Widget 2">
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <div class="card" onclick="postMessage('time_picker')">
+                            <img src="
+                            https://raw.githubusercontent.com/srinad/flutter_widgets/013e291b8f5f4e49b285f23c1a4ce1b26fb6a7b0/WidgetsImages/time_picker.jpg"
+                                alt="Widget 2">
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="tab-pane fade" id="tab5">
@@ -853,6 +909,16 @@
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script>
+            const vscode = acquireVsCodeApi();
+
+            function postMessage(widgetName) {
+                vscode.postMessage({
+                    command: 'insertWidgetCustom',
+                    widgetName: widgetName
+                });
+            }
+        </script>
 </body>
 
 </html>
